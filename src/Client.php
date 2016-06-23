@@ -12,7 +12,7 @@ class Client extends \Predis\Client
      * @param string $value
      * @return int The length of the list after the push operations.
      */
-    public function zrpush(string $key, string $value)
+    public function zrpush($key, $value)
     {
         return $this->zadd($key, 'NX', microtime(true), $value);
     }
@@ -25,7 +25,7 @@ class Client extends \Predis\Client
      * @param string $value
      * @return int The length of the list after the push operations.
      */
-    public function zlpush(string $key, string $value)
+    public function zlpush($key, $value)
     {
         return $this->zadd($key, 'NX', -microtime(true), $value);
     }
