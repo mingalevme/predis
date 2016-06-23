@@ -1,11 +1,14 @@
 # mingalevme/predis
 ## Extended version of predis/predis — added support for pseudo-unique lists (based on ordered set)
 
-## Added methods:
-* **zrpush($key, $value)**: Insert all the specified values at the tail of the list stored at key.
-* **zlpush($key, $value)**: Insert all the specified values at the head of the list stored at key.
+## Available methods:
+* **zrpush($key, $value1, $value2 = null, .., $valueN = null)**: Insert all the specified values at the tail of the list stored at key.
+* **zlpush($key, $value1, $value2 = null, .., $valueN = null)**: Insert all the specified values at the head of the list stored at key.
 * **zlpop($key)**: Removes and returns the first element of the list stored at key.
 * **zrpop($key)**: Removes and returns the last element of the list stored at key.
+
+## Important
+**Methods z[l|r]pop don't support transactions**
 
 ## Example
 
