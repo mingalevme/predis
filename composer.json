@@ -1,14 +1,12 @@
 {
     "name": "mingalevme/predis",
-    "description": "",
-    "keywords": ["zrpush", "zlpush", "zlpop", "zrpop", "redis", "ordered set", "predis"],
-    "license": "MIT",
-    "type": "project",
+    "description": "Extended version of predis/predis — added support for pseudo-unique lists (based on ordered set)",
+    "keywords": ["zrpush", "zlpush", "zlpop", "zrpop", "redis", "predis", "ordered set"],
     "require": {
-        "predis/predis": "^1.0"
+        "predis/predis": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "~4.8"
     },
     "autoload": {
         "psr-4": {
