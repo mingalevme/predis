@@ -7,9 +7,6 @@
 * **zlpop($key)**: Removes and returns the first element of the list stored at key.
 * **zrpop($key)**: Removes and returns the last element of the list stored at key.
 
-## Important
-**Methods z[l|r]pop don't support transactions**
-
 ## Example
 
 ```php
